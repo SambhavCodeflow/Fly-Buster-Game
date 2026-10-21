@@ -13,8 +13,7 @@ No download. No login. No build step. Just click and play.
 
 <br>
 
-<a href="https://play.sambhavgames.workers.dev/fly_buster.html"><img src="https://img.shields.io/badge/▶%20PLAY%20NOW-ff2ea6?style=for-the-badge" alt="Play now"></a>
-<a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-2ee6c5?style=for-the-badge" alt="MIT License"></a>
+<a href="https://play.sambhavgames.workers.dev/fly_buster.html"><img src="https://img.shields.io/badge/▶%20PLAY%20NOW-ff2ea6?style=for-the-badge" alt="Play now"></a></a>
 <img src="https://img.shields.io/badge/three.js-r128-ffa62e?style=for-the-badge" alt="three.js">
 <img src="https://img.shields.io/badge/platform-PC%20%7C%20Mobile-b04dff?style=for-the-badge" alt="PC and Mobile">
 
