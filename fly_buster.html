@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Teleoperator Lite 3D</title>
+<title>Fly Buster Free Play</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
 <style>
 :root{color-scheme:dark;--bg:#0a0c18;--fg:#f2f2f2;--ac:#2ee6c5;--pn:#171925}
@@ -79,6 +79,7 @@ html,body{overscroll-behavior:none}
 @media (max-height:480px){.htag,.st,.cc em{display:none}.logo{font-size:22px}.hui{padding-top:6px}#play{padding:8px;font-size:15px}.opt{margin-bottom:6px}.gauge{width:110px;height:110px;margin-bottom:6px}#needle{height:44px}.gauge b{font-size:16px;bottom:20px}#steps{margin:4px 0;font-size:11px}#ctl{--bs:clamp(40px,11vmin,56px)}}
 #sl{position:fixed;inset:0;pointer-events:none;z-index:1;opacity:0;background:repeating-conic-gradient(from 0deg at 50% 55%,rgba(255,255,255,.22) 0 .7deg,transparent .7deg 7deg);-webkit-mask:radial-gradient(circle at 50% 55%,transparent 38%,#000 90%);mask:radial-gradient(circle at 50% 55%,transparent 38%,#000 90%)}
 #cpa{position:fixed;top:calc(52px + env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%);z-index:2;text-align:center;color:#39ff88;font-weight:800;text-shadow:0 1px 4px #000;pointer-events:none}#ar{font-size:26px;line-height:1}
+#gh{position:absolute;top:calc(10px + env(safe-area-inset-top,0px));left:calc(10px + env(safe-area-inset-left,0px));z-index:6;display:flex;align-items:center;gap:8px;padding:7px 12px 7px 9px;border-radius:30px;background:rgba(15,10,40,.6);border:1px solid rgba(255,255,255,.28);color:#fff;text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.5px;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);transition:.2s;touch-action:manipulation}#gh svg{width:20px;height:20px;fill:#fff;flex:none}#gh small{display:block;font-size:10px;font-weight:500;opacity:.7;letter-spacing:.3px}#gh:hover{border-color:#2ee6c5;box-shadow:0 0 14px rgba(46,230,197,.5);transform:translateY(-1px)}@media (max-height:480px){#gh small{display:none}}
 </style>
 </head>
 <body>
@@ -98,7 +99,7 @@ html,body{overscroll-behavior:none}
 <div class="hr"><span><kbd data-k="KeyR">R</kbd><kbd data-k="KeyM">M</kbd><kbd data-k="KeyH">H</kbd></span><span>Reset · Mute · This panel</span></div>
 <div class="hr"><span>📱 Touch</span><span>◀▶ steer · ▲▼ gas/brake · ⚡ nitro · ✈ fly · ⤒⤓ up/down</span></div>
 <p style="margin:10px 0 0">Points: drift, near-miss traffic, orbs. Orbs refill nitro.</p></div></div>
-<div id='home'><canvas id='hv'></canvas><div class='hui'><div class='logo'>TELEOPERATOR <span>LITE</span></div><div class='htag'>Drive. Drift. Fly. Escape the cops.</div><div id='cards'></div>
+<div id='home'><a id='gh' href='https://github.com/SambhavCodeflow/Fly-Buster-Game' target='_blank' rel='noopener' aria-label='Open source on GitHub'><svg viewBox='0 0 16 16' aria-hidden='true'><path d='M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z'/></svg><span>Open Source<small>View code &amp; star on GitHub</small></span></a><canvas id='hv'></canvas><div class='hui'><div class='logo'>TELEOPERATOR <span>LITE</span></div><div class='htag'>Drive. Drift. Fly. Escape the cops.</div><div id='cards'></div>
 <div class='opt'><input id='nm2' maxlength='12' placeholder='Your name'><div class='sg' id='qg'><button class='on' data-v='1'>Shadows</button><button data-v='0'>Low</button></div><div class='sg' id='tg'><button class='on' data-v='0'>☀ Day</button><button data-v='2'>🌙 Night</button></div></div>
 <button id='play'>▶ PLAY</button></div></div>
 <div id='ld'><div class='beams'><i></i><i></i></div><div class='ldc'><div class='gauge'><div id='needle'></div><b id='rpm'>0</b><small>RPM</small></div><div id='ldt'>Insert key...</div><ul id='steps'></ul><div id='ldbar'><div id='ldf'></div></div><div id='ldn'></div></div></div>
